@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Deer Run Golf Course in Horton, Michigan — 9 holes, great course conditions, tee times and clubhouse dining.">
+  <title>Deer Run Golf Course | Horton, MI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Deer Run Golf Course home">
+      <span class="brand-mark">DR</span>
+      <span><strong>DEER RUN</strong><small>GOLF COURSE</small></span>
+    </a>
+    <nav>
+      <a href="#course">Course</a>
+      <a href="#book">Tee Times</a>
+      <a href="#dining">Dining</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#book">Book a Tee Time</a>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">HORTON, MICHIGAN • PUBLIC 9-HOLE COURSE</p>
+        <h1>Good golf.<br><em>Great atmosphere.</em></h1>
+        <p class="hero-copy">A local 9-hole favorite with well-kept greens, scenic fairways and a clubhouse restaurant worth staying for.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#book">Book Your Tee Time <span>→</span></a>
+          <a class="button ghost" href="#dining">See Restaurant</a>
+        </div>
+        <div class="hero-facts">
+          <span><b>9</b> HOLES</span>
+          <span><b>3,090</b> MAX YARDS</span>
+          <span><b>OPEN</b> TO THE PUBLIC</span>
+        </div>
+      </div>
+      <div class="hero-badge"><span>EST.</span><strong>1964</strong><small>Horton, MI</small></div>
+    </section>
+
+    <section class="quickbar">
+      <div><span class="icon">⛳</span><div><small>COURSE</small><strong>9 Holes</strong></div></div>
+      <div><span class="icon">◷</span><div><small>TEE TIMES</small><strong>Book Online</strong></div></div>
+      <div><span class="icon">🍴</span><div><small>CLUBHOUSE</small><strong>Restaurant & Bar</strong></div></div>
+      <div><span class="icon">☎</span><div><small>CALL US</small><strong>517-688-3350</strong></div></div>
+    </section>
+
+    <section id="course" class="section course-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE COURSE</p><h2>A round you'll want<br>to play again.</h2></div>
+        <p>Deer Run is a straightforward, enjoyable 9-hole course built for golfers who want quality conditions without the fuss. Walk it, ride it, bring the family and make a day of it.</p>
+      </div>
+      <div class="course-grid">
+        <article class="feature-card feature-large">
+          <div class="card-art fairway-art"><div class="flag"></div></div>
+          <div class="feature-copy"><span>01 / COURSE</span><h3>9 holes of Michigan golf</h3><p>Multiple tee options, natural scenery and a mix of holes that keeps a short round interesting.</p></div>
+        </article>
+        <article class="feature-card">
+          <div class="number">02</div><h3>Nice course conditions</h3><p>Come for the golf and stay for the atmosphere. Course conditions are a big part of the Deer Run experience.</p>
+        </article>
+        <article class="feature-card dark">
+          <div class="number">03</div><h3>No driving range. No problem.</h3><p>Deer Run keeps it simple: warm up on the putting green, then get out and play.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="book" class="booking-section">
+      <div class="booking-wrap">
+        <div>
+          <p class="eyebrow">TEE TIMES</p>
+          <h2>Get on the course.</h2>
+          <p>Choose your day and players, then book your round. Once the course's booking provider is connected, this button can send golfers directly to the live tee sheet.</p>
+          <div class="booking-note"><span>✓</span><div><strong>Online booking ready</strong><small>Add the course's live booking URL in <code>data.js</code>.</small></div></div>
+        </div>
+        <div class="booking-card">
+          <label>Date<input id="bookingDate" type="date"></label>
+          <label>Players<select id="players"><option>1 player</option><option>2 players</option><option>3 players</option><option>4 players</option></select></label>
+          <label>Round<select><option>9 holes</option><option>18 holes</option></select></label>
+          <button class="button primary full" id="bookBtn">Find Tee Times →</button>
+          <p class="tiny">Tee-time availability is controlled by the course's booking provider.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="dining" class="section dining-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE CLUBHOUSE</p><h2>Play nine.<br>Stay for dinner.</h2></div>
+        <p>Our on-site restaurant and bar gives golfers and locals another reason to stop by. Check the daily special or browse the regular menu.</p>
+      </div>
+      <div class="special-grid" id="specials"></div>
+      <div class="menu-wrap">
+        <div class="menu-title"><p class="eyebrow">REGULAR MENU</p><h3>Clubhouse favorites</h3><p>Menu shown here is editable. Replace placeholder descriptions and prices with the current printed menu.</p></div>
+        <div class="menu-list" id="menuList"></div>
+      </div>
+    </section>
+
+    <section id="events" class="section events-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">WHAT'S HAPPENING</p><h2>October at Deer Run.</h2></div>
+        <p>Add leagues, tournaments, fundraisers, restaurant events, outings and other activities to the calendar in <code>data.js</code>.</p>
+      </div>
+      <div class="calendar-head"><button id="prevMonth">←</button><h3 id="monthTitle"></h3><button id="nextMonth">→</button></div>
+      <div class="calendar" id="calendar"></div>
+      <div class="event-list" id="eventList"></div>
+    </section>
+
+    <section class="hours-section">
+      <div class="hours-intro"><p class="eyebrow">COME SEE US</p><h2>Hours & location</h2><p>Hours can change with weather, season and special events. Verify before publishing as final.</p></div>
+      <div class="hours-card"><div id="hoursList"></div></div>
+      <div class="location-card"><span class="pin">⌖</span><p><strong id="addressText"></strong><br>Horton, Michigan</p><a id="mapLink" class="text-link" target="_blank" rel="noopener">Get Directions →</a></div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div><p class="eyebrow">DEER RUN GOLF COURSE</p><h2>See you at the first tee.</h2><p>Questions about tee times, outings, events or the restaurant? Give the clubhouse a call.</p></div>
+      <a class="phone-link" href="tel:5176883350">517-688-3350 <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand"><span class="brand-mark">DR</span><span><strong>DEER RUN</strong><small>GOLF COURSE</small></span></div>
+    <p>© 2026 Deer Run Golf Course • Horton, Michigan</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
